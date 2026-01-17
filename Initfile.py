@@ -3,3 +3,5 @@
 print("I love cats!")
 
 print("saving this file was confusing, but I figured it out")
+
+print(3*5)
