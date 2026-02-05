@@ -8,13 +8,25 @@ teen_ticket = 12
 adult_ticket = 15
 senior_ticket = 10
 
+
 if age <= 12:
-    print("Your ticket costs: $",str(child_ticket))
+    ticket_price = child_ticket
 elif age <= 17:
-    print("Your ticket costs: $",str(teen_ticket))
+    ticket_price = teen_ticket
 elif age <= 64:
-    print("Your ticket costs: $",str(adult_ticket))
+    ticket_price = adult_ticket
 else:
-    print("Your ticket costs: $",str(senior_ticket))
+    ticket_price = senior_ticket
+
+print("Your ticket costs: $", str(ticket_price))
+
+# calculate 7% tax and print it
+tax = ticket_price * 0.07
+print("Tax (7%): $", f"{tax:.2f}")
+
+# new total ticket price and print
+new_total = ticket_price + tax
+print("Total price: $", f"{new_total:.2f}")
+
 
 
